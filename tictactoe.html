@@ -16,10 +16,14 @@ and open the template in the editor.
             text-align: center;
             font-size: 80px;
         }
+        span{
+            
+        }
     </style>
     <body>
         <script>
             var player = "X"
+            var win = false
             function play(cellid){
                 var move = document.getElementsById(cellid);
                 move.textContent=player;

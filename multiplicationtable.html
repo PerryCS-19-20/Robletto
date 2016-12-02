@@ -26,6 +26,32 @@ and open the template in the editor.
         var body = document.body;
         body.appendChild(timesTable);
         }
+        for(var i= 0; i < 11;i++){
+            var row = document.createElement("tr");
+            timesTable.appendChild(row);
+        }
+        for(var y = 0; y < 11; y++){
+            column = document.createElement("th");
+            column.textContent= y;
+            if(i == 0){
+                cell.textContent= "";
+            
+        }else{
+            column = document.createElement("id");
+            if(y == 0){
+                
+                
+               column = document.createElement("th");
+               column.textContent= 1;
+            }else{
+                
+                column.textContent= 1*y;
+            }
+        }
+        row.appendChild(column);
+       }
+    }
+}  
         </script>
     </body>
 </html>
